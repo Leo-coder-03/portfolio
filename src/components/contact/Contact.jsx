@@ -61,10 +61,10 @@ const Contact = () => {
       </motion.div>
       <div className="formContainer">
       <motion.div className="phoneSvg" initial={{opacity:1}} whileInView={{opacity:0}} transition={{delay:3,duration:1}}>
-      <svg height="500px" width="500px" fill="orange" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	 viewBox="0 0 512 512"  xml:space="preserve">
+      <svg height="500px" width="500px" fill="orange" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 512 512"  xmlSpace="preserve">
 <g>
-	<motion.path stroke-width={0.2} fill = "none" initial = {{pathLength:0}} animate={isInView && {pathLength:1}} transition ={{duration:3}} class="st0" d="M255.998,0.002C114.606,0.012,0.01,114.604,0,256c0.01,141.406,114.65,255.328,255.926,255.998h0.334
+	<motion.path stroke-width={0.2} fill = "none" initial = {{pathLength:0}} animate={isInView && {pathLength:1}} transition ={{duration:3}} className="st0" d="M255.998,0.002C114.606,0.012,0.01,114.604,0,256c0.01,141.406,114.65,255.328,255.926,255.998h0.334
 		l0.297-0.009c27.124,0.038,49.507-8.527,64.961-22.594c15.468-14.01,23.727-33.254,23.708-52.736
 		c0.02-9.148-1.914-18.306-5.521-27.024c6.086-3.464,10.143-6.612,11.301-7.444c4.152-2.957,16-18.766,7.693-31.79
 		c-8.344-13.014-38.042-42.678-46.152-47.702c-8.086-5.015-21.598-0.124-28.105,9.426c-6.526,9.55-11.674,6.689-11.674,6.689
