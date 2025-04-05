@@ -24,7 +24,7 @@ const App = () => {
     <section id="Contact" ref={contactRef}>
       <Contact/>
     </section>
-    <section id="About">About</section>
+    {/* <section id="About">About</section> */}
   </div>
 };
 
