@@ -21,7 +21,8 @@ const Skills = () => {
     const ref = useRef()
     const isInView = useInView(ref,{margin:"-100px"})
   return (
-    <motion.div className="skills" variants={variants} initial="initial" ref={ref} animate={isInView && "animate"}>
+    // isInView &&
+    <motion.div className="skills" variants={variants} initial="initial" ref={ref} animate={ "animate"}>
       <motion.div className="textContainer" variants={variants}>
         <p>I focus on learning, coding and 
         <br/> developing solutions to solve everyday problems.
@@ -42,22 +43,22 @@ const Skills = () => {
         <motion.div className="box" whileHover={{backgroundColor:"lightgray",color:"black"}}>
             <h2>Branding</h2>
             <p>Blork fizbaz wompdoodle snaffle quibber. Zibberwocky flummoxed drindle farfegnugen snozzle. Wibberflap zoodlequack glimberdoon snorfle. Quizzlestick plonkdoodle bramblefizz twizzle wump. Glibberflap snozzbucket crunkle drabbleflitz</p>
-            <button>Go</button>
+            <button>Certificate</button>
         </motion.div>
         <motion.div className="box" whileHover={{backgroundColor:"lightgray",color:"black"}}>
             <h2>Branding</h2>
             <p>Blork fizbaz wompdoodle snaffle quibber. Zibberwocky flummoxed drindle farfegnugen snozzle. Wibberflap zoodlequack glimberdoon snorfle. Quizzlestick plonkdoodle bramblefizz twizzle wump. Glibberflap snozzbucket crunkle drabbleflitz</p>
-            <button>Go</button>
+            <button>Certificate</button>
         </motion.div>
         <motion.div className="box" whileHover={{backgroundColor:"lightgray",color:"black"}}>
             <h2>Branding</h2>
             <p>Blork fizbaz wompdoodle snaffle quibber. Zibberwocky flummoxed drindle farfegnugen snozzle. Wibberflap zoodlequack glimberdoon snorfle. Quizzlestick plonkdoodle bramblefizz twizzle wump. Glibberflap snozzbucket crunkle drabbleflitz</p>
-            <button>Go</button>
+            <button>Certificate</button>
         </motion.div>
         <motion.div className="box" whileHover={{backgroundColor:"lightgray",color:"black"}}>
             <h2>Branding</h2>
             <p>Blork fizbaz wompdoodle snaffle quibber. Zibberwocky flummoxed drindle farfegnugen snozzle. Wibberflap zoodlequack glimberdoon snorfle. Quizzlestick plonkdoodle bramblefizz twizzle wump. Glibberflap snozzbucket crunkle drabbleflitz</p>
-            <button>Go</button>
+            <button>Certificate</button>
         </motion.div>
       </motion.div>
     </motion.div>
