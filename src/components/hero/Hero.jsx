@@ -39,11 +39,15 @@ const sliderVariants = {
   },
 };
 
-const Hero = ({contactRef}) => {
+const Hero = ({contactRef,portfolioRef}) => {
   const scrollToContact = () => {
     if (contactRef.current) {
-      contactRef.current.scrollIntoView({ behavior: "smooth" }); // ✅ Scroll to the contact section
+      contactRef.current.scrollIntoView({ behavior: "smooth" });
     }};
+    const scrollToPortfolio = () => {
+      if (portfolioRef.current) {
+        portfolioRef.current.scrollIntoView({ behavior: "smooth" });
+      }};
   return (
     <div className="hero">
     <div className="wrapper">
@@ -51,7 +55,7 @@ const Hero = ({contactRef}) => {
       <motion.h2 variants={textVariants}>SHRUTI TIWARI</motion.h2>
       <motion.h1 variants={textVariants}>FullStack Developer</motion.h1>
       <motion.div variants={textVariants} className="buttons">
-        <button variants={textVariants}>See the Latest Work</button>
+        <button variants={textVariants} onClick={scrollToPortfolio}>See the Latest Work</button>
         <button variants={textVariants} style={{backgroundColor:"white",color:"black"}} onClick={scrollToContact}>Contact Me</button>
       </motion.div>
       <motion.img variants={textVariants} src="/scroll.png"alt="" initial="hidden" animate="scrollButton"></motion.img>
@@ -67,7 +71,7 @@ const Hero = ({contactRef}) => {
       </motion.div>
 
       <div className="imageContainer">
-        <img src="/hero.png" alt="Hero Image" />
+        <img src="/coding.svg" alt="Hero Image" />
       </div>
     </div>
   )
