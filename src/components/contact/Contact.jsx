@@ -61,7 +61,7 @@ const Contact = () => {
       </motion.div>
       <div className="formContainer">
       <motion.div className="phoneSvg" initial={{opacity:1}} whileInView={{opacity:0}} transition={{delay:3,duration:1}}>
-      <svg className="contact-icon" height="500px" width="500px" fill="orange" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" 
+      <svg className="contact-icon" height="500px" width="500px" fill="#663399" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" 
 	 viewBox="0 0 512 512"  xmlSpace="preserve">
 <g>
 	<motion.path stroke-width={0.2} fill = "none" initial = {{pathLength:0}} animate={isInView && {pathLength:1}} transition ={{duration:3}} className="st0" d="M255.998,0.002C114.606,0.012,0.01,114.604,0,256c0.01,141.406,114.65,255.328,255.926,255.998h0.334

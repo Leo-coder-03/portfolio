@@ -9,18 +9,26 @@ import Cursor from "./components/cursor/Cursor";
 import { useRef } from "react";
 const App = () => {
   const contactRef = useRef(null);
+  const portfolioRef = useRef(null);
   return <div>
   <Cursor/>
     <section id="Homepage">
       <Navbar/>
-      <Hero contactRef={contactRef}/>
+      <div id="Home">
+      <Hero contactRef={contactRef} portfolioRef={portfolioRef}/>
+      </div>
     </section>
     <section id="Services"><Parallax type="skills"/></section>
     <section id="Skills">
         <Skills />
       </section>
-    <section id="Portfolio"><Parallax type="portfolio"/></section>
+    <section id="Portfolio"
+    ><Parallax type="portfolio"/></section>
+    <div ref={portfolioRef}>
+    <div id="Projects">
     <Portfolio/>
+    </div>
+    </div>
     <section id="Contact" ref={contactRef}>
       <Contact/>
     </section>

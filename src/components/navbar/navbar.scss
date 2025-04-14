@@ -24,15 +24,19 @@
 .social{
     display:flex;
     gap:20px;
-
+    padding:10px;
+    border-radius:20px;
+    background: rgba(147, 194, 240, 0.2);
+    @include tablet{
+        margin-right:8px;
+    }
+    @include mobile{
+        margin-right:2px;
+        gap:5px;
+    }
     img{
         width:30px;
         height:30px;
-    }
-}
-@media(max-width:576px)
-{
-    .social{
-        gap:1px;
+        border-radius:10px;
     }
 }
