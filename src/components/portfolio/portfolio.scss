@@ -87,6 +87,9 @@
                 padding:10px;
                 cursor:pointer;
                 color:white;
+                &:hover{
+                    background-color:#592d85;
+                }
             }
         }
     }

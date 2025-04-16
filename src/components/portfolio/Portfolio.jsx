@@ -36,7 +36,7 @@ const Single = ({item}) =>{
     const {scrollYProgress} = useScroll({
         target:ref,
     });
-    const y = useTransform(scrollYProgress,[0,1],["0px","10px"]);
+    const y = useTransform(scrollYProgress,[0,1],["-10px","10px"]);
     return (
         <section ref={ref}>
         <div className="container">
