@@ -93,6 +93,9 @@
             @include mobile{
                 padding:10px;
             }
+            &:hover{
+                background-color:#592d85;
+            }
         }
     }
     }
