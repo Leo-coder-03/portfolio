@@ -52,11 +52,13 @@ const Hero = ({contactRef,portfolioRef}) => {
     <div className="hero">
     <div className="wrapper">
     <motion.div className="textContainer" variants={textVariants} initial="initial"animate="animate">
-      <motion.h2 variants={textVariants}>SHRUTI TIWARI</motion.h2>
+    <motion.div variants={textVariants}>
+  <h2 className="animated-text">SHRUTI TIWARI</h2>
+</motion.div>      
       <motion.h1 variants={textVariants}>FullStack Developer</motion.h1>
       <motion.div variants={textVariants} className="buttons">
         <button variants={textVariants} onClick={scrollToPortfolio}>See the Latest Work</button>
-        <button variants={textVariants} style={{backgroundColor:"white",color:"black"}} onClick={scrollToContact}>Contact Me</button>
+        <button className="contactBtn" variants={textVariants} onClick={scrollToContact}>Contact Me</button>
       </motion.div>
       <motion.img variants={textVariants} src="/scroll.png"alt="" initial="hidden" animate="scrollButton"></motion.img>
     </motion.div>
