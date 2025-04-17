@@ -59,7 +59,23 @@
                     margin-right:20px;
                     cursor:pointer !important;
                     font-weight:300;
+                    &:hover {
+                      border:1px solid rebeccapurple;
+                      background-color: rebeccapurple;
+                      color: white;
+                    }
                 }
+                .contactBtn {
+                    background-color: white;
+                    color: black;
+                    transition: all 0.3s ease;
+                  
+                    &:hover {
+                      border:1px solid rebeccapurple;
+                      background-color: rebeccapurple;
+                      color: white;
+                    }
+                  }                  
             }
             img{
                width:50px; 

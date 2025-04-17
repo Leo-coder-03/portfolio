@@ -19,6 +19,7 @@ const variants={
 const Contact = () => {
     const ref = useRef();
     const formRef = useRef();
+    const [formData, setFormData] = useState({ name: '', email: '', message: '' });
     const [error,setError] = useState(false);
     const [success,setSuccess] = useState(false);
     const isInView = useInView(ref,{margin:"-100px"});
@@ -33,6 +34,11 @@ const Contact = () => {
             (result) => {
               setSuccess(true);
               console.log('SUCCESS!');
+              formRef.current.reset();
+              setFormData({ name: '', email: '', message: '' });
+              setTimeout(() => {
+                setSuccess(false);
+              }, 3000);
             },
             (error) => {
                 setError(true);
@@ -82,9 +88,9 @@ const Contact = () => {
        </motion.div>
         <motion.form ref={formRef} onSubmit={sendEmail}
         initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:4,duration:1}}>
-            <input type="text" required placeholder="Name"name="name"/>
-            <input type="email" required placeholder="Email"name="email"/>
-            <textarea rows={8} placeholder="Message"name="message"/>
+            <input type="text" required placeholder="Name"name="name" onChange={(e) => setFormData({ ...formData, name: e.target.value })}/>
+            <input type="email" required placeholder="Email"name="email" onChange={(e) => setFormData({ ...formData, email: e.target.value })}/>
+            <textarea rows={8} placeholder="Message"name="message" onChange={(e) => setFormData({ ...formData, message: e.target.value })}/>
             <button>Submit</button>
             {error && "Error sending message."}
             {success && "Message sent successfully."}

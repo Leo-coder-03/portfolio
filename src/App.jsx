@@ -23,11 +23,11 @@ const App = () => {
     <section id="About">
       <About/>
     </section>
-    <section id="Skills"><Parallax type="skills"/></section>
+    <section><Parallax type="skills"/></section>
     <section id="Skills">
         <Skills />
       </section>
-    <section id="Portfolio"
+    <section
     ><Parallax type="portfolio"/></section>
     <div ref={portfolioRef}>
     <div id="Projects">
