@@ -6,29 +6,17 @@ const items = [
         id:1,
         title:"Online Application System for stable isotope studies - groundwater",
         img:"/CGWBss.png",
+        url:"https://cgwb.gov.in/OASIS/",
         type:"image",
         desc:"This online system empowers users to search, visualize, and analyze stable isotope data from the Central Ground Water Board (CGWB), with features like map-based browsing, GNIP data integration, and custom dataset uploads for in-depth analysis. Originally conceptualized during the Smart India Hackathon 2022, this project was declared a winning solution. Our team later developed the complete platform under the mentorship and guidance of CGWB, Government of India."
     },
     {
         id:2,
-        title:"Travel Guide",
-        url: "https://your-live-project-link.com",
-        type:"iframe",
-        desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    {
-        id:3,
-        title:"Travel Guide",
-        url: "https://your-live-project-link.com",
-        type:"iframe",
-        desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    {
-        id:4,
-        title:"Travel Guide",
-        url: "https://your-live-project-link.com",
-        type:"iframe",
-        desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        title:"FarmFresh - Grocery Delivering App",
+        img: "/FarmFreshss.png",
+        url:"https://farm-fresh-chi.vercel.app/",
+        type:"image",
+        desc:"FarmFresh is a modern grocery and food item selling platform designed for convenience and efficiency. It features a dedicated admin panel for seamless product management, secure online payments via Stripe integration, and robust user authentication using JWT. Built on the MongoDB database, FarmFresh ensures fast, reliable data handling and a smooth user experience from login to checkout."
     },
 ];
 const Single = ({item}) =>{
@@ -46,7 +34,7 @@ const Single = ({item}) =>{
                             <iframe
                                 src={item.url}
                                 width="100%"
-                                height="300px"
+                                height="100%"
                                 frameBorder="0"
                                 allowFullScreen
                                 title={item.title}
@@ -64,7 +52,7 @@ const Single = ({item}) =>{
                     {item.title}
                 </h2>
                 <p>{item.desc}</p>
-                <button onClick = {()=>window.open("https://cgwb.gov.in/OASIS/","_blank")}>See Demo</button>
+                <button onClick = {()=>window.open(item.url,"_blank")}>See Demo</button>
             </motion.div>
         </div>
         </div>
